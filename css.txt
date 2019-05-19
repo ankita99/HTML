@@ -6,6 +6,10 @@ csss>>>>
             background: #fff !important; 
         }
 		
+		a.ui-treetable-toggler ~ span{
+            color: blue;
+        }
+		
 	ts>>>>>>>>>	
 		nodeSelect(event) {
         console.log(event.node.data.id);

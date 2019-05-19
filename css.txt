@@ -1,6 +1,23 @@
+csss>>>>
 .ui-treetable-child-table-container tbody:nth-child(odd){
             background: #c2c2c2 !important; 
         }
         .ui-treetable-child-table-container tbody:nth-child(odd) .ui-treetable-child-table-container tbody:nth-child(odd){
             background: #fff !important; 
         }
+		
+	ts>>>>>>>>>	
+		nodeSelect(event) {
+        console.log(event.node.data.id);
+    }
+	
+	
+	html>>>>>>>>>>>>
+	
+	<ay-treeTable [value]="mockTree" selectionMode="single" [(selection)]="selectedRows"
+        (onNodeSelect)="nodeSelect($event)">
+          <ay-column field="name" header="Name"></ay-column>
+          <ay-column field="id" header="id"></ay-column>
+          <ay-column field="status" header="status"></ay-column>
+          <ay-column field="version" header="version"></ay-column>
+      </ay-treeTable>
